@@ -1,0 +1,443 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>JAVASCRIPT BUTTONS! MADE BY CAYACAP!</title>
+
+<head>
+    
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,664;1,664&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,664;1,664&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* body gradient */
+
+body{
+
+background: hsla(277, 75%, 84%, 1);
+
+background: linear-gradient(270deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%);
+
+background: -moz-linear-gradient(270deg, hsla(277, 75%, 84%, 1) 0%, hsla(297, 50%, 51%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DEB8F5", endColorstr="#BA42C0", GradientType=1 );
+
+}
+
+.dark-mode {
+    background: #333; 
+    color: #fff; 
+}
+
+/* for left and right side */
+.upper-section-container{
+
+    max-width: 850px;
+    min-height: 400px;
+    margin-inline: auto;
+    display: flex;
+    
+
+}
+
+/* right side content */
+.right-side{
+    
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    
+}
+.h1-content{
+
+    background-color: greenyellow;
+    border: 1px solid;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  
+}
+
+h1 {
+
+    font-family: 'Cabin';
+    display: flex;
+    margin-inline: auto;
+    margin: 0;
+    width: 390px;
+    font-size: 4em;
+    padding: 24px;
+    
+}
+/* end of right side content */
+
+/* left side content */
+
+.left-side-container {
+
+    display: grid;
+    place-items: center;
+    min-width: 300px;
+   
+}
+
+.subheader-left{
+
+    
+    display: flex;
+
+}
+
+.subheader-text {
+
+    font-family: 'Source Code Pro';
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+}
+
+p {
+
+    font-family: 'Source Code Pro';
+    
+}
+
+.dark-mode-button-content {
+
+   
+    display: grid;
+    grid-auto-flow: column;
+    
+
+}
+.button {
+
+    display: flex;
+    place-items: center;
+    margin: 30px;
+    
+}
+
+.font-increase-button-content{
+
+    
+    display: grid;
+    grid-auto-flow: column;
+    
+}
+
+.operator-button{
+
+   
+    display: flex;
+    place-items: center;
+    gap: 0.3rem;
+
+}
+
+.plus, .minus, .dark {
+
+
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 15px;
+    height: 36px;
+    width: 50px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+.content {
+
+    display: flex;
+    place-items: center;
+    text-align: center;
+    color: white;
+}
+/* end of left side content, end of upper-section-container */
+
+/* lower-section container */
+
+.subheader-lower {
+
+    display: grid;
+    place-items: center;
+    
+}
+
+
+label, .title-sub-num, .title-sub-desc {
+    
+    display: flex;
+    margin-bottom: 15px;
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: white;
+
+}
+
+.border-num {
+
+    padding: 20px;
+    border: 1px solid;
+    margin: 20px;
+    border-radius: 10px;
+    background-color:yellowgreen;
+
+}
+
+
+.converter-content{
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    
+}
+
+
+
+.num-title-1, .div-num-1 {
+
+    
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+}
+
+.num-title-2, .div-num-2 {
+
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    
+
+}
+
+</style>
+</head>
+<body>
+<div class="upper-section-container">
+
+    <div class="left-side-container">
+
+        <div class ="subheader-left">
+            <p class="subheader-text">With JS, you can:</p>
+        </div>
+        
+        <div class="dark-mode-button-content">
+
+            <div class="button">
+                <button class="dark">&#x23FB;</button>
+
+            </div>
+            <div class="content">
+                
+                    <p>Switches Website to Dark Mode</p>
+                
+            </div>
+
+        </div>
+
+        <div class="font-increase-button-content">
+
+            <div class="operator-button">
+                <div class="plus-button">
+                    <button class="plus">+</button>
+                </div>
+              
+                <div class="minus-button">
+                    <button class="minus">-</button>
+                </div>
+
+            </div>
+            <div class="content">
+
+                <p>Increases and Decreases Font Size</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="right-side">
+
+        <div class="h1-content">
+            <h1>GET STARTED WITH JAVASCRIPT</h1>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div class="lower-section-container">
+
+    <div class="subheader-lower">
+        <div class="subheader-lower-item">
+            <p class="subheader-text">You can create Functional Calculators using JavaScript!</p>
+        </div>
+    </div>
+
+    <div class="border-num">
+        <div class="converter-content">
+
+            <div class="dec-bin">
+           
+                <div class="decimal-div">
+                
+                    <div class="num-title-1">
+                        <label for="dec-num">Decimal Conversion &#40;Base 10&#41;</label>
+                    </div>
+
+                    <div class="div-num-1">
+                        <input type="number" name=" " id="input1" placeholder="Input your number here!">
+                    </div>
+                
+                </div>
+                    
+                <div class="binary-div">
+
+                    <div class="num-title-1">
+                        <label for="bin-num">Binary Conversion &#40;Base 2&#41;</label>
+                    </div>
+
+                    <div class="div-num-1">
+                        <input type="number" name=" " id="input2" placeholder="Input your number here!">
+                    </div>
+
+                </div>
+           
+            </div>
+
+            <div class="oct-hex">
+
+                <div class="octal-div">
+
+                    <div class="num-title-2">
+                        <label for="oct-num">Octal Conversion &#40;Base 8&#41;</label>
+                    </div>
+
+                    <div class="div-num-2">
+                        <input type="number" name=" " id="input3" placeholder="Input your number here!">
+                    </div>
+
+                </div>
+
+                <div class="hexadecimal-div">
+
+                    <div class="num-title-2">
+                        <label for="hex-num">Hexadecimal Conversion &#40;Base 16&#41;</label>
+                    </div>
+
+                    <div class="div-num-2">
+                        <input type="text" name=" " id="input4" placeholder="Input your number here!">
+                    </div>
+
+                </div>
+
+        </div>
+        
+    </div>
+
+
+    
+
+
+</div>
+</body>
+
+<script>
+
+   
+const darkModeButton = document.querySelector('.dark');
+const body = document.querySelector('body');
+
+darkModeButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+});
+
+
+const plusButton = document.querySelector('.plus');
+const minusButton = document.querySelector('.minus');
+const allTextElements = document.querySelectorAll('p, h1');
+
+plusButton.addEventListener('click', () => {
+    allTextElements.forEach(element => {
+        const fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+        const currentSize = parseFloat(fontSize);
+        element.style.fontSize = (currentSize + 1) + 'px';
+    });
+});
+
+minusButton.addEventListener('click', () => {
+    allTextElements.forEach(element => {
+        const fontSize = window.getComputedStyle(element).getPropertyValue('font-size');
+        const currentSize = parseFloat(fontSize);
+        element.style.fontSize = (currentSize - 1) + 'px';
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const inputDecimal = document.getElementById('input1');
+    const inputBinary = document.getElementById('input2');
+    const inputOctal = document.getElementById('input3');
+    const inputHexadecimal = document.getElementById('input4');
+
+   
+    function convertDecimal() {
+        const decimalValue = parseInt(inputDecimal.value);
+        inputBinary.value = decimalValue.toString(2);
+        inputOctal.value = decimalValue.toString(8);
+        inputHexadecimal.value = decimalValue.toString(16).toUpperCase();
+    }
+
+    
+    function convertBinary() {
+        const binaryValue = inputBinary.value;
+        inputDecimal.value = parseInt(binaryValue, 2);
+        inputOctal.value = parseInt(binaryValue, 2).toString(8);
+        inputHexadecimal.value = parseInt(binaryValue, 2).toString(16).toUpperCase();
+    }
+
+   
+    function convertOctal() {
+        const octalValue = inputOctal.value;
+        inputDecimal.value = parseInt(octalValue, 8);
+        inputBinary.value = parseInt(octalValue, 8).toString(2);
+        inputHexadecimal.value = parseInt(octalValue, 8).toString(16).toUpperCase();
+    }
+
+   
+    function convertHexadecimal() {
+        const hexadecimalValue = inputHexadecimal.value;
+        inputDecimal.value = parseInt(hexadecimalValue, 16);
+        inputBinary.value = parseInt(hexadecimalValue, 16).toString(2);
+        inputOctal.value = parseInt(hexadecimalValue, 16).toString(8);
+    }
+
+   
+    inputDecimal.addEventListener('input', convertDecimal);
+    inputBinary.addEventListener('input', convertBinary);
+    inputOctal.addEventListener('input', convertOctal);
+    inputHexadecimal.addEventListener('input', convertHexadecimal);
+});
+</script>
+</html>
